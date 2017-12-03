@@ -1,0 +1,17 @@
+package orescape.mod.objects.tools;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+
+public class ArrowTypes
+{
+
+	//public static Item ARROW_BRONZE;
+	//ARROW_BRONZE;
+	//ARROW_IRON;
+	//ARROW_STEEL;
+	//ARROW_MITHRIL;
+	//ARROW_ADDY;
+	//ARROW_RUNE;
+	//ARROW_DRAGON;
+}

@@ -1,0 +1,330 @@
+package orescape.mod.init;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraftforge.common.util.EnumHelper;
+import orescape.mod.objects.armor.AddyChest;
+import orescape.mod.objects.armor.AddyFeet;
+import orescape.mod.objects.armor.AddyHead;
+import orescape.mod.objects.armor.AddyLegs;
+import orescape.mod.objects.armor.BronzeChest;
+import orescape.mod.objects.armor.BronzeFeet;
+import orescape.mod.objects.armor.BronzeHead;
+import orescape.mod.objects.armor.BronzeLegs;
+import orescape.mod.objects.armor.DragonChest;
+import orescape.mod.objects.armor.DragonFeet;
+import orescape.mod.objects.armor.DragonHead;
+import orescape.mod.objects.armor.DragonLegs;
+import orescape.mod.objects.armor.IronChest;
+import orescape.mod.objects.armor.IronFeet;
+import orescape.mod.objects.armor.IronHead;
+import orescape.mod.objects.armor.IronLegs;
+import orescape.mod.objects.armor.MithrilChest;
+import orescape.mod.objects.armor.MithrilFeet;
+import orescape.mod.objects.armor.MithrilHead;
+import orescape.mod.objects.armor.MithrilLegs;
+import orescape.mod.objects.armor.RuneChest;
+import orescape.mod.objects.armor.RuneFeet;
+import orescape.mod.objects.armor.RuneHead;
+import orescape.mod.objects.armor.RuneLegs;
+import orescape.mod.objects.armor.SteelChest;
+import orescape.mod.objects.armor.SteelFeet;
+import orescape.mod.objects.armor.SteelHead;
+import orescape.mod.objects.armor.SteelLegs;
+import orescape.mod.objects.items.ItemBase;
+import orescape.mod.objects.tools.ToolAxe;
+import orescape.mod.objects.tools.ToolBattleaxe;
+import orescape.mod.objects.tools.ToolBow;
+import orescape.mod.objects.tools.ToolDagger;
+import orescape.mod.objects.tools.ToolHalberd;
+import orescape.mod.objects.tools.ToolLongsword;
+import orescape.mod.objects.tools.ToolMace;
+import orescape.mod.objects.tools.ToolPickaxe;
+import orescape.mod.objects.tools.ToolScimitar;
+import orescape.mod.objects.tools.ToolSword;
+import orescape.mod.objects.tools.ToolTwohand;
+import orescape.mod.objects.tools.ToolWarhammer;
+import orescape.mod.util.Reference;
+
+public class ItemInit
+{
+	public static final List<Item> ITEMS = new ArrayList<Item>();
+	
+	//public static enum ToolTypes{BRONZE, IRON, STEEL, MITHRIL, ADDY, RUNE, DRAGON}
+	//Material
+		//Tool
+	//public static final ToolMaterial material = EnumHelper.addToolMaterial(name, harvestLevel, maxUses, efficiency, damage, enchantability);
+	public static final ToolMaterial TOOL_BRONZE = EnumHelper.addToolMaterial("tool_bronze", 0, -1, 0.0F, 0.0F, 0);
+	public static final ToolMaterial TOOL_IRON = EnumHelper.addToolMaterial("tool_iron", 0, -1, 0.5F, 0.5F, 0);
+	public static final ToolMaterial TOOL_STEEL = EnumHelper.addToolMaterial("tool_steel", 6, -1, 1.0F, 1.0F, 0);
+	public static final ToolMaterial TOOL_MITHRIL = EnumHelper.addToolMaterial("tool_mithril", 7, -1, 1.5F, 1.5F, 0);
+	public static final ToolMaterial TOOL_ADDY = EnumHelper.addToolMaterial("tool_addy", 8, -1, 2.0F, 2.0F, 0);
+	public static final ToolMaterial TOOL_RUNE = EnumHelper.addToolMaterial("tool_rune", 9, -1, 2.5F, 2.5F, 0);
+	public static final ToolMaterial TOOL_DRAGON = EnumHelper.addToolMaterial("tool_dragon", 10, -1, 4.0F, 3.0F, 0);
+	
+		//Weapon
+			//Sword
+	public static final ToolMaterial BRONZE_SWORD = EnumHelper.addToolMaterial("bronze_sword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial IRON_SWORD = EnumHelper.addToolMaterial("iron_sword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial STEEL_SWORD = EnumHelper.addToolMaterial("steel_sword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial MITHRIL_SWORD = EnumHelper.addToolMaterial("mithril_sword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial ADDY_SWORD = EnumHelper.addToolMaterial("addy_sword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial RUNE_SWORD = EnumHelper.addToolMaterial("rune_sword", 0, 0, 0, 0, 0);
+	//public static final ToolMaterial DRAGON_SWORD = EnumHelper.addToolMaterial("dragon_sword", 0, -1, 0.0F, 5.0F, 0);
+			//LongSword
+	public static final ToolMaterial BRONZE_LONGSWORD = EnumHelper.addToolMaterial("bronze_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial IRON_LONGSWORD = EnumHelper.addToolMaterial("iron_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial STEEL_LONGSWORD = EnumHelper.addToolMaterial("steel_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial MITHRIL_LONGSWORD = EnumHelper.addToolMaterial("mithril_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial ADDY_LONGSWORD = EnumHelper.addToolMaterial("addy_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial RUNE_LONGSWORD = EnumHelper.addToolMaterial("rune_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial DRAGON_LONGSWORD = EnumHelper.addToolMaterial("dragon_longsword", 0, 0, 0, 0, 0);
+			//Dagger
+	public static final ToolMaterial BRONZE_DAGGER = EnumHelper.addToolMaterial("bronze_dagger", 0, 0, 0, 0, 0);
+	public static final ToolMaterial IRON_DAGGER = EnumHelper.addToolMaterial("iron_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial STEEL_DAGGER = EnumHelper.addToolMaterial("steel_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial MITHRIL_DAGGER = EnumHelper.addToolMaterial("mithril_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial ADDY_DAGGER = EnumHelper.addToolMaterial("addy_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial RUNE_DAGGER = EnumHelper.addToolMaterial("rune_longsword", 0, 0, 0, 0, 0);
+	public static final ToolMaterial DRAGON_DAGGER = EnumHelper.addToolMaterial("dragon_longsword", 0, 0, 0, 0, 0);
+			//Scimitar
+	public static final ToolMaterial BRONZE_SCIMITAR = EnumHelper.addToolMaterial("bronze_scimitar", 0, 0, 0, 0, 0);
+	public static final ToolMaterial IRON_SCIMITAR = EnumHelper.addToolMaterial("iron_scimitar", 0, 0, 0, 0, 0);
+	public static final ToolMaterial STEEL_SCIMITAR = EnumHelper.addToolMaterial("steel_scimitar", 0, 0, 0, 0, 0);
+	public static final ToolMaterial MITHRIL_SCIMITAR = EnumHelper.addToolMaterial("mithril_scimitar", 0, 0, 0, 0, 0);
+	public static final ToolMaterial ADDY_SCIMITAR = EnumHelper.addToolMaterial("addy_scimitar", 0, 0, 0, 0, 0);
+	public static final ToolMaterial RUNE_SCIMITAR = EnumHelper.addToolMaterial("rune_scimitar", 0, 0, 0, 0, 0);
+	public static final ToolMaterial DRAGON_SCIMITAR = EnumHelper.addToolMaterial("dragon_scimitar", 0, 0, 0, 0, 0);
+			//Mace
+	public static final ToolMaterial BRONZE_MACE = EnumHelper.addToolMaterial("bronze_mace", 0, 0, 0, 0, 0);
+	public static final ToolMaterial IRON_MACE = EnumHelper.addToolMaterial("iron_mace", 0, 0, 0, 0, 0);
+	public static final ToolMaterial STEEL_MACE = EnumHelper.addToolMaterial("steel_mace", 0, 0, 0, 0, 0);
+	public static final ToolMaterial MITHRIL_MACE = EnumHelper.addToolMaterial("mithril_mace", 0, 0, 0, 0, 0);
+	public static final ToolMaterial ADDY_MACE = EnumHelper.addToolMaterial("addy_mace", 0, 0, 0, 0, 0);
+	public static final ToolMaterial RUNE_MACE = EnumHelper.addToolMaterial("rune_mace", 0, 0, 0, 0, 0);
+	public static final ToolMaterial DRAGON_MACE = EnumHelper.addToolMaterial("dragon_mace", 0, 0, 0, 0, 0);
+			//Battleaxe
+	public static final ToolMaterial BRONZE_BATTLEAXE = EnumHelper.addToolMaterial("bronze_battleaxe", 0, 0, 0, 0, 0);
+	public static final ToolMaterial IRON_BATTLEAXE = EnumHelper.addToolMaterial("iron_battleaxe", 0, 0, 0, 0, 0);
+	public static final ToolMaterial STEEL_BATTLEAXE = EnumHelper.addToolMaterial("steel_battleaxe", 0, 0, 0, 0, 0);
+	public static final ToolMaterial MITHRIL_BATTLEAXE = EnumHelper.addToolMaterial("mithril_battleaxe", 0, 0, 0, 0, 0);
+	public static final ToolMaterial ADDY_BATTLEAXE = EnumHelper.addToolMaterial("addy_battleaxe", 0, 0, 0, 0, 0);
+	public static final ToolMaterial RUNE_BATTLEAXE = EnumHelper.addToolMaterial("rune_battleaxe", 0, 0, 0, 0, 0);
+	public static final ToolMaterial DRAGON_BATTLEAXE = EnumHelper.addToolMaterial("dragon_battleaxe", 0, 0, 0, 0, 0);
+			//Halberd
+	public static final ToolMaterial BRONZE_HALBERD = EnumHelper.addToolMaterial("bronze_halberd", 0, 0, 0, 0, 0);
+	public static final ToolMaterial IRON_HALBERD = EnumHelper.addToolMaterial("iron_halberd", 0, 0, 0, 0, 0);
+	public static final ToolMaterial STEEL_HALBERD = EnumHelper.addToolMaterial("steel_halberd", 0, 0, 0, 0, 0);
+	public static final ToolMaterial MITHRIL_HALBERD = EnumHelper.addToolMaterial("mithril_halberd", 0, 0, 0, 0, 0);
+	public static final ToolMaterial ADDY_HALBERD = EnumHelper.addToolMaterial("addy_halberd", 0, 0, 0, 0, 0);
+	public static final ToolMaterial RUNE_HALBERD = EnumHelper.addToolMaterial("rune_halberd", 0, 0, 0, 0, 0);
+	public static final ToolMaterial DRAGON_HALBERD = EnumHelper.addToolMaterial("dragon_halberd", 0, 0, 0, 0, 0);
+			//Warhammer
+	public static final ToolMaterial BRONZE_WARHAMMER = EnumHelper.addToolMaterial("bronze_warhamer", 0, 0, 0, 0, 0);
+	public static final ToolMaterial IRON_WARHAMMER = EnumHelper.addToolMaterial("iron_warhamer", 0, 0, 0, 0, 0);
+	public static final ToolMaterial STEEL_WARHAMMER = EnumHelper.addToolMaterial("steel_warhamer", 0, 0, 0, 0, 0);
+	public static final ToolMaterial MITHRIL_WARHAMMER = EnumHelper.addToolMaterial("mithril_warhamer", 0, 0, 0, 0, 0);
+	public static final ToolMaterial ADDY_WARHAMMER = EnumHelper.addToolMaterial("addy_warhamer", 0, 0, 0, 0, 0);
+	public static final ToolMaterial RUNE_WARHAMMER = EnumHelper.addToolMaterial("rune_warhamer", 0, 0, 0, 0, 0);
+	public static final ToolMaterial DRAGON_WARHAMMER = EnumHelper.addToolMaterial("dragon_warhamer", 0, 0, 0, 0, 0);
+			//Two-hand
+	public static final ToolMaterial BRONZE_TWOHAND = EnumHelper.addToolMaterial("bronze_twohand", 0, 0, 0, 0, 0);
+	public static final ToolMaterial IRON_TWOHAND = EnumHelper.addToolMaterial("iron_twohand", 0, 0, 0, 0, 0);
+	public static final ToolMaterial STEEL_TWOHAND = EnumHelper.addToolMaterial("steel_twohand", 0, 0, 0, 0, 0);
+	public static final ToolMaterial MITHRIL_TWOHAND = EnumHelper.addToolMaterial("mithril_twohand", 0, 0, 0, 0, 0);
+	public static final ToolMaterial ADDY_TWOHAND = EnumHelper.addToolMaterial("addy_twohand", 0, 0, 0, 0, 0);
+	public static final ToolMaterial RUNE_TWOHAND = EnumHelper.addToolMaterial("rune_twohand", 0, 0, 0, 0, 0);
+	public static final ToolMaterial DRAGON_TWOHAND = EnumHelper.addToolMaterial("dragon_twohand", 0, 0, 0, 0, 0);
+	
+		//Armor
+	//public static final ArmorMaterial material = EnumHelper.addArmorMaterial(name, textureName, durability, reductionAmounts, enchantability, soundOnEquip, toughness);
+	public static final ArmorMaterial ARMOR_BRONZE = EnumHelper.addArmorMaterial("armor_bronze", Reference.MODID + ":bronze", -1, new int[]{0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_IRON = EnumHelper.addArmorMaterial("armor_iron", Reference.MODID + ":iron", -1, new int[]{0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_STEEL = EnumHelper.addArmorMaterial("armor_steel", Reference.MODID + ":steel", -1, new int[]{0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_WHITE = EnumHelper.addArmorMaterial("armor_white", Reference.MODID + ":white", -1, new int[]{0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_BLACK = EnumHelper.addArmorMaterial("armor_black", Reference.MODID + ":black", -1, new int[]{0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_MITHRIL = EnumHelper.addArmorMaterial("armor_mithril", Reference.MODID + ":mithril", -1, new int[]{0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_ADDY = EnumHelper.addArmorMaterial("armor_addy", Reference.MODID + ":addy", -1, new int[]{0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_RUNE = EnumHelper.addArmorMaterial("armor_rune", Reference.MODID + ":rune", -1, new int[]{0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_DRAGON = EnumHelper.addArmorMaterial("armor_dragon", Reference.MODID + ":dragon", -1, new int[]{0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	
+	public static final Item BOW_MAGIC = new ToolBow("bow_magic");
+	
+	//Ore
+	public static final Item ORE_COPPER = new ItemBase("ore_copper");
+	public static final Item ORE_TIN = new ItemBase("ore_tin");
+	public static final Item ORE_IRON = new ItemBase("ore_iron");
+	public static final Item ORE_COAL = new ItemBase("ore_coal");
+	public static final Item ORE_SILVER = new ItemBase("ore_silver");
+	public static final Item ORE_GOLD = new ItemBase("ore_gold");
+	public static final Item ORE_MITHRIL = new ItemBase("ore_mithril");
+	public static final Item ORE_ADDY = new ItemBase("ore_addy");
+	public static final Item ORE_RUNE = new ItemBase("ore_rune");
+	public static final Item ORE_ANCIENT = new ItemBase("ore_ancient");
+	
+	//Bars
+	public static final Item BAR_BRONZE = new ItemBase("bar_bronze");
+	public static final Item BAR_IRON = new ItemBase("bar_iron");
+	public static final Item BAR_STEEL = new ItemBase("bar_steel");
+	public static final Item BAR_SILVER = new ItemBase("bar_silver");
+	public static final Item BAR_GOLD = new ItemBase("bar_gold");
+	public static final Item BAR_MITHRIL = new ItemBase("bar_mithril");
+	public static final Item BAR_ADDY = new ItemBase("bar_addy");
+	public static final Item BAR_RUNE = new ItemBase("bar_rune");
+	public static final Item BAR_DRAGON = new ItemBase("bar_dragon");
+	public static final Item BAR_ANCIENT = new ItemBase("bar_ancient");
+	
+	//Weapons
+		//Sword
+	public static final Item SWORD_BRONZE = new ToolSword("sword_bronze", BRONZE_SWORD);
+	public static final Item SWORD_IRON = new ToolSword("sword_iron", IRON_SWORD);
+	public static final Item SWORD_STEEL = new ToolSword("sword_steel", STEEL_SWORD);
+	public static final Item SWORD_MITHRIL = new ToolSword("sword_mithril", MITHRIL_SWORD);
+	public static final Item SWORD_ADDY = new ToolSword("sword_addy", ADDY_SWORD);
+	public static final Item SWORD_RUNE = new ToolSword("sword_rune", RUNE_SWORD);
+	
+		//Longswords
+	public static final Item LONGSWORD_BRONZE = new ToolLongsword("longsword_bronze", BRONZE_LONGSWORD);
+	public static final Item LONGSWORD_IRON = new ToolLongsword("longsword_iron", IRON_LONGSWORD);
+	public static final Item LONGSWORD_STEEL = new ToolLongsword("longsword_steel", STEEL_LONGSWORD);
+	public static final Item LONGSWORD_MITHRIL = new ToolLongsword("longsword_mithril", MITHRIL_LONGSWORD);
+	public static final Item LONGSWORD_ADDY = new ToolLongsword("longsword_addy", ADDY_LONGSWORD);
+	public static final Item LONGSWORD_RUNE = new ToolLongsword("longsword_rune", RUNE_LONGSWORD);
+	public static final Item LONGSWORD_DRAGON = new ToolLongsword("longsword_dragon", DRAGON_LONGSWORD);
+	
+		//Halberd
+	public static final Item HALBERD_BRONZE = new ToolHalberd("halberd_bronze", BRONZE_HALBERD);
+	public static final Item HALBERD_IRON = new ToolHalberd("halberd_iron", IRON_HALBERD);
+	public static final Item HALBERD_STEEL = new ToolHalberd("halberd_steel", STEEL_HALBERD);
+	public static final Item HALBERD_MITHRIL = new ToolHalberd("halberd_mithril", MITHRIL_HALBERD);
+	public static final Item HALBERD_ADDY = new ToolHalberd("halberd_addy", ADDY_HALBERD);
+	public static final Item HALBERD_RUNE = new ToolHalberd("halberd_rune", RUNE_HALBERD);
+	public static final Item HALBERD_DRAGON = new ToolHalberd("halberd_dragon", DRAGON_HALBERD);
+
+		//Dagger
+	public static final Item DAGGER_BRONZE = new ToolDagger("dagger_bronze", BRONZE_DAGGER);
+	public static final Item DAGGER_IRON = new ToolDagger("dagger_iron", IRON_DAGGER);
+	public static final Item DAGGER_STEEL = new ToolDagger("dagger_steel", STEEL_DAGGER);
+	public static final Item DAGGER_MITHRIL = new ToolDagger("dagger_mithril", MITHRIL_DAGGER);
+	public static final Item DAGGER_ADDY = new ToolDagger("dagger_addy", ADDY_DAGGER);
+	public static final Item DAGGER_RUNE = new ToolDagger("dagger_rune", RUNE_DAGGER);
+	public static final Item DAGGER_DRAGON = new ToolDagger("dagger_dragon", DRAGON_DAGGER);
+		
+		//Scimitar
+	public static final Item SCIMITAR_BRONZE = new ToolScimitar("scimitar_bronze", BRONZE_SCIMITAR);
+	public static final Item SCIMITAR_IRON = new ToolScimitar("scimitar_iron", IRON_SCIMITAR);
+	public static final Item SCIMITAR_STEEL = new ToolScimitar("scimitar_steel", STEEL_SCIMITAR);
+	public static final Item SCIMITAR_MITHRIL = new ToolScimitar("scimitar_mithril", MITHRIL_SCIMITAR);
+	public static final Item SCIMITAR_ADDY = new ToolScimitar("scimitar_addy", ADDY_SCIMITAR);
+	public static final Item SCIMITAR_RUNE = new ToolScimitar("scimitar_rune", RUNE_SCIMITAR);
+	public static final Item SCIMITAR_DRAGON = new ToolScimitar("scimitar_dragon", DRAGON_SCIMITAR);
+	
+		//Battleaxes
+	public static final Item BATTLEAXE_BRONZE = new ToolBattleaxe("battleaxe_bronze", BRONZE_BATTLEAXE);
+	public static final Item BATTLEAXE_IRON = new ToolBattleaxe("battleaxe_iron", IRON_BATTLEAXE);
+	public static final Item BATTLEAXE_STEEL = new ToolBattleaxe("battleaxe_steel", STEEL_BATTLEAXE);
+	public static final Item BATTLEAXE_MITHRIL = new ToolBattleaxe("battleaxe_mithril", MITHRIL_BATTLEAXE);
+	public static final Item BATTLEAXE_ADDY = new ToolBattleaxe("battleaxe_addy", ADDY_BATTLEAXE);
+	public static final Item BATTLEAXE_RUNE = new ToolBattleaxe("battleaxe_rune", RUNE_BATTLEAXE);
+	public static final Item BATTLEAXE_DRAGON = new ToolBattleaxe("battleaxe_dragon", DRAGON_BATTLEAXE);
+	
+		//Warhammer
+	public static final Item WARHAMMER_BRONZE = new ToolWarhammer("warhammer_bronze", BRONZE_WARHAMMER);
+	public static final Item WARHAMMER_IRON = new ToolWarhammer("warhammer_iron", IRON_WARHAMMER);
+	public static final Item WARHAMMER_STEEL = new ToolWarhammer("warhammer_steel", STEEL_WARHAMMER);
+	public static final Item WARHAMMER_MITHRIL = new ToolWarhammer("warhammer_mithril", MITHRIL_WARHAMMER);
+	public static final Item WARHAMMER_ADDY = new ToolWarhammer("warhammer_addy", ADDY_WARHAMMER);
+	public static final Item WARHAMMER_RUNE = new ToolWarhammer("warhammer_rune", RUNE_WARHAMMER);
+	public static final Item WARHAMMER_DRAGON = new ToolWarhammer("warhammer_dragon", DRAGON_WARHAMMER);
+		
+		//Two handed
+	public static final Item TWOHAND_BRONZE = new ToolTwohand("twohand_bronze", BRONZE_TWOHAND);
+	public static final Item TWOHAND_IRON = new ToolTwohand("twohand_iron", IRON_TWOHAND);
+	public static final Item TWOHAND_STEEL = new ToolTwohand("twohand_steel", STEEL_TWOHAND);
+	public static final Item TWOHAND_MITHRIL = new ToolTwohand("twohand_mithril", MITHRIL_TWOHAND);
+	public static final Item TWOHAND_ADDY = new ToolTwohand("twohand_addy", ADDY_TWOHAND);
+	public static final Item TWOHAND_RUNE = new ToolTwohand("twohand_rune", RUNE_TWOHAND);
+	public static final Item TWOHAND_DRAGON = new ToolTwohand("twohand_dragon", DRAGON_TWOHAND);
+	
+	//public static final Item AXE_DHAROKS = new ToolSword("axe_dharoks", WEAPON_BARROWS);
+	
+		//Axes
+	public static final Item AXE_BRONZE = new ToolAxe("axe_bronze", TOOL_BRONZE);
+	public static final Item AXE_IRON = new ToolAxe("axe_iron", TOOL_IRON);
+	public static final Item AXE_STEEL = new ToolAxe("axe_steel", TOOL_STEEL);
+	public static final Item AXE_MITHRIL = new ToolAxe("axe_mithril", TOOL_MITHRIL);
+	public static final Item AXE_ADDY = new ToolAxe("axe_addy", TOOL_ADDY);
+	public static final Item AXE_RUNE = new ToolAxe("axe_rune", TOOL_RUNE);
+	public static final Item AXE_DRAGON = new ToolAxe("axe_dragon", TOOL_DRAGON);
+	
+		//Maces
+	public static final Item MACE_BRONZE = new ToolMace("mace_bronze", BRONZE_MACE);
+	public static final Item MACE_IRON = new ToolMace("mace_iron", IRON_MACE);
+	public static final Item MACE_STEEL = new ToolMace("mace_steel", STEEL_MACE);
+	public static final Item MACE_MITHRIL = new ToolMace("mace_mithril", MITHRIL_MACE);
+	public static final Item MACE_ADDY = new ToolMace("mace_addy", ADDY_MACE);
+	public static final Item MACE_RUNE = new ToolMace("mace_rune", RUNE_MACE);
+	public static final Item MACE_DRAGON = new ToolMace("mace_dragon", DRAGON_MACE);
+		
+		//Pickaxes
+	public static final Item PICKAXE_BRONZE = new ToolPickaxe("pickaxe_bronze", TOOL_BRONZE);
+	public static final Item PICKAXE_IRON = new ToolPickaxe("pickaxe_iron", TOOL_IRON);
+	public static final Item PICKAXE_STEEL = new ToolPickaxe("pickaxe_steel", TOOL_STEEL);
+	public static final Item PICKAXE_MITHRIL = new ToolPickaxe("pickaxe_mithril", TOOL_MITHRIL);
+	public static final Item PICKAXE_ADDY = new ToolPickaxe("pickaxe_addy", TOOL_ADDY);
+	public static final Item PICKAXE_RUNE = new ToolPickaxe("pickaxe_rune", TOOL_RUNE);
+	public static final Item PICKAXE_DRAGON = new ToolPickaxe("pickaxe_dragon", TOOL_DRAGON);
+	
+	//Armor
+	//public static final Item HELMET_DRAGON = new ArmorBase("helmet_dragon", armor_material, (1 for helm, chest, boots / 2 for legs), equipslot);
+	public static final Item HELMET_BRONZE = new BronzeHead("helmet_bronze", ARMOR_BRONZE, 1, EntityEquipmentSlot.HEAD);
+	public static final Item CHESTPLATE_BRONZE = new BronzeChest("chestplate_bronze", ARMOR_BRONZE, 1, EntityEquipmentSlot.CHEST);
+	public static final Item LEGGINGS_BRONZE = new BronzeLegs("leggings_bronze", ARMOR_BRONZE, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BOOTS_BRONZE = new BronzeFeet("boots_bronze", ARMOR_BRONZE, 1, EntityEquipmentSlot.FEET);
+	
+	public static final Item HELMET_IRON = new IronHead("helmet_iron", ARMOR_IRON, 1, EntityEquipmentSlot.HEAD);
+	public static final Item CHESTPLATE_IRON = new IronChest("chestplate_iron", ARMOR_IRON, 1, EntityEquipmentSlot.CHEST);
+	public static final Item LEGGINGS_IRON = new IronLegs("leggings_iron", ARMOR_IRON, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BOOTS_IRON = new IronFeet("boots_iron", ARMOR_IRON, 1, EntityEquipmentSlot.FEET);
+
+	public static final Item HELMET_STEEL = new SteelHead("helmet_steel", ARMOR_STEEL, 1, EntityEquipmentSlot.HEAD);
+	public static final Item CHESTPLATE_STEEL = new SteelChest("chestplate_steel", ARMOR_STEEL, 1, EntityEquipmentSlot.CHEST);
+	public static final Item LEGGINGS_STEEL = new SteelLegs("leggings_steel", ARMOR_STEEL, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BOOTS_STEEL = new SteelFeet("boots_steel", ARMOR_STEEL, 1, EntityEquipmentSlot.FEET);
+	
+	//public static final Item HELMET_WHITE = new WhiteHead("helmet_white", ARMOR_WHITE, 1, EntityEquipmentSlot.HEAD);
+	//public static final Item CHESTPLATE_WHITE = new WhiteChest("chestplate_white", ARMOR_WHITE, 1, EntityEquipmentSlot.CHEST);
+	//public static final Item LEGGINGS_WHITE = new WhiteLegs("leggings_white", ARMOR_WHITE, 2, EntityEquipmentSlot.LEGS);
+	//public static final Item BOOTS_WHITE = new WhiteFeet("boots_white", ARMOR_WHITE, 1, EntityEquipmentSlot.FEET);
+	
+	//public static final Item HELMET_BLACK = new BlackHead("helmet_black", ARMOR_BLACK, 1, EntityEquipmentSlot.HEAD);
+	//public static final Item CHESTPLATE_BLACK = new BlackChest("chestplate_black", ARMOR_BLACK, 1, EntityEquipmentSlot.CHEST);
+	//public static final Item LEGGINGS_BLACK = new BlackLegs("leggings_black", ARMOR_BLACK, 2, EntityEquipmentSlot.LEGS);
+	//public static final Item BOOTS_BLACK = new BlackFeet("boots_black", ARMOR_BLACK, 1, EntityEquipmentSlot.FEET);
+	
+	public static final Item HELMET_MITHRIL = new MithrilHead("helmet_mithril", ARMOR_MITHRIL, 1, EntityEquipmentSlot.HEAD);
+	public static final Item CHESTPLATE_MITHRIL = new MithrilChest("chestplate_mithril", ARMOR_MITHRIL, 1, EntityEquipmentSlot.CHEST);
+	public static final Item LEGGINGS_MITHRIL = new MithrilLegs("leggings_mithril", ARMOR_MITHRIL, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BOOTS_MITHRIL = new MithrilFeet("boots_mithril", ARMOR_MITHRIL, 1, EntityEquipmentSlot.FEET);
+	
+	public static final Item HELMET_ADDY = new AddyHead("helmet_addy", ARMOR_ADDY, 1, EntityEquipmentSlot.HEAD);
+	public static final Item CHESTPLATE_ADDY = new AddyChest("chestplate_addy", ARMOR_ADDY, 1, EntityEquipmentSlot.CHEST);
+	public static final Item LEGGINGS_ADDY = new AddyLegs("leggings_addy", ARMOR_ADDY, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BOOTS_ADDY = new AddyFeet("boots_addy", ARMOR_ADDY, 1, EntityEquipmentSlot.FEET);
+	
+	public static final Item HELMET_RUNE = new RuneHead("helmet_rune", ARMOR_RUNE, 1, EntityEquipmentSlot.HEAD);
+	public static final Item CHESTPLATE_RUNE = new RuneChest("chestplate_rune", ARMOR_RUNE, 1, EntityEquipmentSlot.CHEST);
+	public static final Item LEGGINGS_RUNE = new RuneLegs("leggings_rune", ARMOR_RUNE, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BOOTS_RUNE = new RuneFeet("boots_rune", ARMOR_RUNE, 1, EntityEquipmentSlot.FEET);
+	
+	public static final Item HELMET_DRAGON = new DragonHead("helmet_dragon", ARMOR_DRAGON, 1, EntityEquipmentSlot.HEAD);
+	public static final Item CHESTPLATE_DRAGON = new DragonChest("chestplate_dragon", ARMOR_DRAGON, 1, EntityEquipmentSlot.CHEST);
+	public static final Item LEGGINGS_DRAGON = new DragonLegs("leggings_dragon", ARMOR_DRAGON, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BOOTS_DRAGON = new DragonFeet("boots_dragon", ARMOR_DRAGON, 1, EntityEquipmentSlot.FEET);
+}

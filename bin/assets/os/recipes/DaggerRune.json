@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " O ",
+        " S "
+    ],   
+    "key":
+    {
+        "O":
+        {
+            "item": "os:bar_rune"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "os:dagger_rune"
+    }
+}

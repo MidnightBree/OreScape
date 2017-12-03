@@ -1,0 +1,16 @@
+[
+{
+  "modid": "os",
+  "name": "OreScape",
+  "description": "Designed for the OreScape server.  This is just a fan-inspired mod.  Runescape is copyright to Jagex Ltd.",
+  "version": "${0.1}",
+  "mcversion": "${1.12.1}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Zapfox"],
+  "credits": "Jagex Ltd, Runescape, Zapfox",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

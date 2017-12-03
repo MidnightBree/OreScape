@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="orescape.mod.objects.tools.ToolWarhammer"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemAxe"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemTool"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="orescape.mod.objects.tools.ToolBow"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="orescape.mod.objects.tools.ArrowTypes"/>
+<fullyQualifiedTypeName name="orescape.mod.util.IHasModel"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemArrow"/>
+</qualifiedTypeNameHistroy>

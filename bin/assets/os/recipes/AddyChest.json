@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "O O",
+        "OOO",
+        "OOO"
+    ],   
+    "key":
+    {
+        "O":
+        {
+            "item": "os:bar_addy"
+        }
+    },
+    
+    "result":
+    {
+        "item": "os:chestplate_addy"
+    }
+}

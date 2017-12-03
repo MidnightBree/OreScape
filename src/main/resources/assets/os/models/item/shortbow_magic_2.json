@@ -1,0 +1,6 @@
+{
+    "parent": "os:item/shortbow_magic",
+    "textures": {
+        "layer0": "os:items/shortbow_magic_1"
+    }
+}

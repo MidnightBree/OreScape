@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " O ",
+        " O ",
+        " S "
+    ],   
+    "key":
+    {
+        "O":
+        {
+            "item": "os:bar_mithril"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "os:sword_mithril"
+    }
+}

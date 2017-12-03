@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "OOO",
+        "O O"
+    ],   
+    "key":
+    {
+        "O":
+        {
+            "item": "os:bar_rune"
+        }
+    },
+    
+    "result":
+    {
+        "item": "os:helmet_rune"
+    }
+}

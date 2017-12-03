@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "O O",
+        "O O"
+    ],   
+    "key":
+    {
+        "O":
+        {
+            "item": "os:bar_steel"
+        }
+    },
+    
+    "result":
+    {
+        "item": "os:boots_steel"
+    }
+}

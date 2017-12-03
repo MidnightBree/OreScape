@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "OOO",
+        " S ",
+        " S "
+    ],   
+    "key":
+    {
+        "O":
+        {
+            "item": "os:bar_dragon"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "os:pickaxe_dragon"
+    }
+}

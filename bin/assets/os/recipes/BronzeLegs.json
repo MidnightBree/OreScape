@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "OOO",
+        "O O",
+        "O O"
+    ],   
+    "key":
+    {
+        "O":
+        {
+            "item": "os:bar_bronze"
+        }
+    },
+    
+    "result":
+    {
+        "item": "os:leggings_bronze"
+    }
+}

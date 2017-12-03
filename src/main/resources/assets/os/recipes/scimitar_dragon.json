@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  O",
+        " O ",
+        " S "
+    ],   
+    "key":
+    {
+        "O":
+        {
+            "item": "os:bar_dragon"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "os:scimitar_dragon"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "os:items/bow_magic",
+    "textures": {
+        "layer0": "os:items/bow_magic_1"
+    }
+}
