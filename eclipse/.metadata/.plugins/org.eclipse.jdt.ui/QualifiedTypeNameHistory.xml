@@ -3,10 +3,22 @@
 <fullyQualifiedTypeName name="orescape.mod.objects.tools.ToolWarhammer"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemAxe"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemTool"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="orescape.mod.objects.tools.ToolBow"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="orescape.mod.objects.tools.ArrowTypes"/>
 <fullyQualifiedTypeName name="orescape.mod.util.IHasModel"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemArrow"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.item.EntityItem"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.IProjectile"/>
+<fullyQualifiedTypeName name="orescape.mod.entity.BronzeArrow"/>
+<fullyQualifiedTypeName name="java.util.function.Predicate"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.annotation.Nullable"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="orescape.mod.init.ItemInit"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.projectile.EntityArrow"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.projectile.EntityLargeFireball"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.Vec3d"/>
 </qualifiedTypeNameHistroy>

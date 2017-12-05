@@ -1,10 +1,4 @@
 {
-  "minecraft:recipes/decorations/crafting_table": {
-    "criteria": {
-      "has_planks": "2017-12-03 04:41:25 -0600"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/wooden_button": {
     "criteria": {
       "has_planks": "2017-12-03 04:41:25 -0600"
@@ -17,15 +11,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/trapdoor": {
+  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
     "criteria": {
-      "has_planks": "2017-12-03 04:41:25 -0600"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/dark_oak_fence": {
-    "criteria": {
-      "has_planks": "2017-12-03 04:41:25 -0600"
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
     },
     "done": true
   },
@@ -35,15 +23,177 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/iron_bars": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_sword": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_leggings": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/dark_oak_door": {
     "criteria": {
       "has_planks": "2017-12-03 04:41:25 -0600"
     },
     "done": true
   },
+  "minecraft:recipes/tools/iron_axe": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/shield": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_pickaxe": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/minecart": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2017-12-03 04:41:25 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bucket": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_wooden_slab": {
+    "criteria": {
+      "has_planks": "2017-12-03 04:41:25 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_block": {
+    "criteria": {
+      "has_iron_block": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_boots": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2017-12-03 04:41:25 -0600"
+    },
+    "done": false
+  },
+  "minecraft:recipes/redstone/iron_door": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "has_planks": "2017-12-03 04:41:25 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/hopper": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_hoe": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/trapdoor": {
+    "criteria": {
+      "has_planks": "2017-12-03 04:41:25 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_fence": {
+    "criteria": {
+      "has_planks": "2017-12-03 04:41:25 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_shovel": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_chestplate": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/wooden_pressure_plate": {
     "criteria": {
       "has_planks": "2017-12-03 04:41:25 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_trapdoor": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:story/smelt_iron": {
+    "criteria": {
+      "iron": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2017-12-04 16:03:03 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/shears": {
+    "criteria": {
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
     },
     "done": true
   },
@@ -59,22 +209,10 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/dark_oak_fence_gate": {
+  "minecraft:recipes/combat/iron_helmet": {
     "criteria": {
-      "has_planks": "2017-12-03 04:41:25 -0600"
+      "has_iron_ingot": "2017-12-04 16:03:03 -0600"
     },
     "done": true
-  },
-  "minecraft:recipes/building_blocks/dark_oak_wooden_slab": {
-    "criteria": {
-      "has_planks": "2017-12-03 04:41:25 -0600"
-    },
-    "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "plains": "2017-12-03 04:41:25 -0600"
-    },
-    "done": false
   }
 }

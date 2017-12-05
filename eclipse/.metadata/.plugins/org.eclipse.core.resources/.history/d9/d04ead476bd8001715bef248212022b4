@@ -1,0 +1,144 @@
+package orescape.mod.entity;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.IProjectile;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityArrow;
+import net.minecraft.item.ItemStack;
+import net.minecraft.network.datasync.DataParameter;
+import net.minecraft.network.datasync.DataSerializers;
+import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
+import orescape.mod.init.ItemInit;
+
+public class BronzeArrow extends EntityArrow implements IProjectile
+{
+	public BronzeArrow(World worldIn)
+    {
+        super(worldIn);
+        this.xTile = -1;
+        this.yTile = -1;
+        this.zTile = -1;
+        this.pickupStatus = BronzeArrow.PickupStatus.DISALLOWED;
+        this.damage = 2.0D;
+        this.setSize(0.5F, 0.5F);
+    }
+	
+
+    private static final DataParameter<Byte> CRITICAL = EntityDataManager.<Byte>createKey(BronzeArrow.class, DataSerializers.BYTE);
+    private int xTile;
+    private int yTile;
+    private int zTile;
+    private Block inTile;
+    private int inData;
+    protected boolean inGround;
+    protected int timeInGround;
+    /** 1 if the player can pick up the arrow */
+    public BronzeArrow.PickupStatus pickupStatus;
+    /** Seems to be some sort of timer for animating an arrow. */
+    public int arrowShake;
+    /** The owner of this arrow. */
+    public Entity shootingEntity;
+    private int ticksInGround;
+    private int ticksInAir;
+    private double damage;
+    /** The amount of knockback an arrow applies when it hits a mob. */
+    private int knockbackStrength;
+
+    public BronzeArrow(World worldIn, double x, double y, double z)
+    {
+        this(worldIn);
+        this.setPosition(x, y, z);
+    }
+    @Override
+    public void onUpdate()
+    {
+        super.onUpdate();
+
+        if (this.prevRotationPitch == 0.0F && this.prevRotationYaw == 0.0F)
+        {
+            float f = MathHelper.sqrt(this.motionX * this.motionX + this.motionZ * this.motionZ);
+            this.rotationYaw = (float)(MathHelper.atan2(this.motionX, this.motionZ) * (180D / Math.PI));
+            this.rotationPitch = (float)(MathHelper.atan2(this.motionY, (double)f) * (180D / Math.PI));
+            this.prevRotationYaw = this.rotationYaw;
+            this.prevRotationPitch = this.rotationPitch;
+        }
+
+        BlockPos blockpos = new BlockPos(this.xTile, this.yTile, this.zTile);
+        IBlockState iblockstate = this.world.getBlockState(blockpos);
+        Block block = iblockstate.getBlock();
+
+        if (iblockstate.getMaterial() != Material.AIR)
+        {
+            AxisAlignedBB axisalignedbb = iblockstate.getCollisionBoundingBox(this.world, blockpos);
+
+            if (axisalignedbb != Block.NULL_AABB && axisalignedbb.offset(blockpos).contains(new Vec3d(this.posX, this.posY, this.posZ)))
+            {
+                this.inGround = true;
+            }
+        }
+
+        if (this.arrowShake > 0)
+        {
+            --this.arrowShake;
+        }
+
+        if (this.inGround)
+        {
+            int j = block.getMetaFromState(iblockstate);
+
+            if ((block != this.inTile || j != this.inData) && !this.world.collidesWithAnyBlock(this.getEntityBoundingBox().grow(0.05D)))
+            {
+                this.inGround = false;
+                this.motionX *= (double)(this.rand.nextFloat() * 0.2F);
+                this.motionY *= (double)(this.rand.nextFloat() * 0.2F);
+                this.motionZ *= (double)(this.rand.nextFloat() * 0.2F);
+                this.ticksInGround = 0;
+                this.ticksInAir = 0;
+            }
+            else
+            {
+                ++this.ticksInGround;
+
+                if (this.ticksInGround >= 30)
+                {
+                    this.setDead();
+                }
+            }
+        }
+            }
+    
+		@Override
+	 public void onCollideWithPlayer(EntityPlayer entityIn)
+	    {
+	        if (!this.world.isRemote && this.inGround && this.arrowShake <= 0)
+	        {
+	            boolean flag = this.pickupStatus == BronzeArrow.PickupStatus.ALLOWED || this.pickupStatus == BronzeArrow.PickupStatus.CREATIVE_ONLY && entityIn.capabilities.isCreativeMode;
+
+	            if (this.pickupStatus == BronzeArrow.PickupStatus.ALLOWED && !entityIn.inventory.addItemStackToInventory(this.getArrowStack()))
+	            {
+	                flag = false;
+	            }
+
+	            if (flag)
+	            {
+	                this.setDead();
+	            }
+	        }
+	    }
+
+	@Override
+	protected ItemStack getArrowStack() {
+		return null;
+	}
+
+}

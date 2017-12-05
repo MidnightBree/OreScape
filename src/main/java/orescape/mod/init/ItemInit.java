@@ -38,7 +38,12 @@ import orescape.mod.objects.armor.SteelFeet;
 import orescape.mod.objects.armor.SteelHead;
 import orescape.mod.objects.armor.SteelLegs;
 import orescape.mod.objects.items.ItemBase;
-import orescape.mod.objects.tools.ArrowTypes;
+import orescape.mod.objects.tools.ArrowAddy;
+import orescape.mod.objects.tools.ArrowBronze;
+import orescape.mod.objects.tools.ArrowIron;
+import orescape.mod.objects.tools.ArrowMithril;
+import orescape.mod.objects.tools.ArrowRune;
+import orescape.mod.objects.tools.ArrowSteel;
 import orescape.mod.objects.tools.ShortbowMagic;
 import orescape.mod.objects.tools.ShortbowMaple;
 import orescape.mod.objects.tools.ShortbowNormal;
@@ -167,13 +172,13 @@ public class ItemInit
 	public static final Item SHORTBOW_YEW = new ShortbowYew("shortbow_yew");
 	public static final Item SHORTBOW_MAGIC = new ShortbowMagic("shortbow_magic");
 	
-	public static final Item BRONZE_ARROW = new ArrowTypes("bronze_arrow");
-	public static final Item IRON_ARROW = new ArrowTypes("iron_arrow");
-	public static final Item STEEL_ARROW = new ArrowTypes("steel_arrow");
-	public static final Item MITHRIL_ARROW = new ArrowTypes("mithril_arrow");
-	public static final Item ADDY_ARROW = new ArrowTypes("addy_arrow");
-	public static final Item RUNE_ARROW = new ArrowTypes("rune_arrow");
-	//public static final Item DRAGON_ARROW = new ArrowTypes("dragon_arrow");
+	public static final Item BRONZE_ARROW = new ArrowBronze("bronze_arrow");
+	public static final Item IRON_ARROW = new ArrowIron("iron_arrow");
+	public static final Item STEEL_ARROW = new ArrowSteel("steel_arrow");
+	public static final Item MITHRIL_ARROW = new ArrowMithril("mithril_arrow");
+	public static final Item ADDY_ARROW = new ArrowAddy("addy_arrow");
+	public static final Item RUNE_ARROW = new ArrowRune("rune_arrow");
+	//public static final Item DRAGON_ARROW = new ArrowDragon("dragon_arrow");
 	
 	//Ore
 	public static final Item ORE_COPPER = new ItemBase("ore_copper");
@@ -346,4 +351,4 @@ public class ItemInit
 	public static final Item CHESTPLATE_DRAGON = new DragonChest("chestplate_dragon", ARMOR_DRAGON, 1, EntityEquipmentSlot.CHEST);
 	public static final Item LEGGINGS_DRAGON = new DragonLegs("leggings_dragon", ARMOR_DRAGON, 2, EntityEquipmentSlot.LEGS);
 	public static final Item BOOTS_DRAGON = new DragonFeet("boots_dragon", ARMOR_DRAGON, 1, EntityEquipmentSlot.FEET);
-}
+	}

@@ -1,0 +1,5 @@
+package orescape.mod.entity;
+
+public class BronzeArrow {
+
+}

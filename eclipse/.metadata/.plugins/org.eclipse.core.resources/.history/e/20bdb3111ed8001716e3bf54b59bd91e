@@ -1,0 +1,61 @@
+package orescape.mod.entity;
+
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.IProjectile;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityArrow;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+import orescape.mod.init.ItemInit;
+
+public class BronzeArrow extends EntityArrow implements IProjectile
+{
+	public BronzeArrow(World worldIn)
+    {
+        super(worldIn);
+        this.xTile = -1;
+        this.yTile = -1;
+        this.zTile = -1;
+        this.pickupStatus = BronzeArrow.PickupStatus.DISALLOWED;
+        this.damage = 2.0D;
+        this.setSize(0.5F, 0.5F);
+    }
+	
+    private int xTile;
+    private int yTile;
+    private int zTile;
+    private double damage;
+
+    public BronzeArrow(World worldIn, double x, double y, double z)
+    {
+        this(worldIn);
+        this.setPosition(x, y, z);
+    }
+	
+	 public void onCollideWithPlayer(EntityPlayer entityIn)
+	    {
+	        if (!this.world.isRemote && this.inGround && this.arrowShake <= 0)
+	        {
+	            boolean flag = this.pickupStatus == BronzeArrow.PickupStatus.ALLOWED || this.pickupStatus == BronzeArrow.PickupStatus.CREATIVE_ONLY && entityIn.capabilities.isCreativeMode;
+
+	            if (this.pickupStatus == BronzeArrow.PickupStatus.ALLOWED && !entityIn.inventory.addItemStackToInventory(this.getArrowStack()))
+	            {
+	                flag = false;
+	            }
+
+	            if (flag)
+	            {
+	            	entityIn.onItemPickup(new EntityItem(entityIn.worldIn, this.xTile,this.yTile,this.zTile, (ItemInit.BRONZE_ARROW)), 1);
+	                this.setDead();
+	            }
+	        }
+	    }
+
+	@Override
+	protected ItemStack getArrowStack() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,69 +1,84 @@
-[04:44:54] [main/INFO]: Setting user: Player780
-[04:44:57] [main/WARN]: Skipping bad option: lastServer:
-[04:44:57] [main/INFO]: LWJGL Version: 2.9.4
-[04:45:00] [main/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:OreScape, FMLFileResourcePack:ToroHealth Damage Indicators
-[04:45:02] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[04:45:02] [Thread-5/INFO]: Initializing LWJGL OpenAL
-[04:45:02] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[04:45:02] [Thread-5/INFO]: OpenAL initialized.
-[04:45:02] [Sound Library Loader/INFO]: Sound engine started
-[04:45:05] [main/INFO]: Created: 1024x512 textures-atlas
-[04:45:06] [main/WARN]: Skipping bad option: lastServer:
-[04:45:07] [main/INFO]: Narrator library for x64 successfully loaded
-[04:45:07] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[04:45:09] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
-[04:45:09] [Server thread/INFO]: Generating keypair
-[04:45:10] [Server thread/INFO]: Loaded 488 advancements
-[04:45:10] [Server thread/INFO]: Preparing start region for level 0
-[04:45:11] [Server thread/INFO]: Changing view distance to 12, from 10
-[04:45:12] [Server thread/INFO]: Player780[local:E:56e2da58] logged in with entity id 184 at (-1570.5073529343938, 4.0, 50.59158767199624)
-[04:45:12] [Server thread/INFO]: Player780 joined the game
-[04:45:12] [Server thread/INFO]: Saving and pausing game...
-[04:45:12] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[04:45:12] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[04:45:12] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[04:45:12] [main/INFO]: Loaded 13 advancements
-[04:45:12] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@566f4fd4[id=6dc954f4-181a-3c6c-99e2-951f7202b4c5,name=Player780,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3190) [Minecraft.class:?]
-	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_151]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_151]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_151]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_151]
+[19:06:59] [main/INFO]: Setting user: Player954
+[19:07:02] [main/WARN]: Skipping bad option: lastServer:
+[19:07:02] [main/INFO]: LWJGL Version: 2.9.4
+[19:07:05] [main/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:OreScape, FMLFileResourcePack:ToroHealth Damage Indicators
+[19:07:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:07:07] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[19:07:07] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:07:08] [Thread-5/INFO]: OpenAL initialized.
+[19:07:08] [Sound Library Loader/INFO]: Sound engine started
+[19:07:12] [main/INFO]: Created: 1024x512 textures-atlas
+[19:07:14] [main/WARN]: Skipping bad option: lastServer:
+[19:07:14] [main/INFO]: Narrator library for x64 successfully loaded
+[19:07:14] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[19:07:16] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
+[19:07:16] [Server thread/INFO]: Generating keypair
+[19:07:17] [Server thread/INFO]: Loaded 488 advancements
+[19:07:17] [Server thread/INFO]: Preparing start region for level 0
+[19:07:17] [Server thread/INFO]: Changing view distance to 12, from 10
+[19:07:19] [Server thread/INFO]: Player954[local:E:089bb966] logged in with entity id 166 at (-1575.2741568270458, 4.0, 16.640846335681506)
+[19:07:19] [Server thread/INFO]: Player954 joined the game
+[19:07:19] [Server thread/INFO]: Player954 has made the advancement [Acquire Hardware]
+[19:07:20] [Server thread/INFO]: Saving and pausing game...
+[19:07:20] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[19:07:20] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[19:07:20] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[19:07:20] [main/INFO]: [CHAT] Player954 has made the advancement [Acquire Hardware]
+[19:07:20] [main/INFO]: Loaded 33 advancements
+[19:07:22] [Server thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_151]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:796) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:741) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:590) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
-[04:45:43] [Server thread/INFO]: Saving and pausing game...
-[04:45:43] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[04:45:43] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[04:45:43] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[04:47:03] [main/INFO]: Loaded 14 advancements
-[04:47:14] [Server thread/INFO]: Saving and pausing game...
-[04:47:14] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[04:47:14] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[04:47:14] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[04:47:33] [Server thread/INFO]: Saving and pausing game...
-[04:47:33] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[04:47:33] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[04:47:33] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[04:49:41] [main/INFO]: Stopping!
-[04:49:41] [Server thread/INFO]: Stopping server
-[04:49:41] [Server thread/INFO]: Saving players
-[04:49:41] [Server thread/INFO]: Saving worlds
-[04:49:41] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[04:49:41] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[04:49:41] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[04:49:41] [main/INFO]: SoundSystem shutting down...
-[04:49:41] [main/WARN]: Author: Paul Lamb, www.paulscode.com
+Caused by: java.lang.NullPointerException
+	at orescape.mod.objects.tools.ShortbowNormal.onPlayerStoppedUsing(ShortbowNormal.java:134) ~[ShortbowNormal.class:?]
+	at net.minecraft.item.ItemStack.onPlayerStoppedUsing(ItemStack.java:628) ~[ItemStack.class:?]
+	at net.minecraft.entity.EntityLivingBase.stopActiveHand(EntityLivingBase.java:3089) ~[EntityLivingBase.class:?]
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerDigging(NetHandlerPlayServer.java:692) ~[NetHandlerPlayServer.class:?]
+	at net.minecraft.network.play.client.CPacketPlayerDigging.processPacket(CPacketPlayerDigging.java:56) ~[CPacketPlayerDigging.class:?]
+	at net.minecraft.network.play.client.CPacketPlayerDigging.processPacket(CPacketPlayerDigging.java:12) ~[CPacketPlayerDigging.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 5 more
+[19:07:24] [Server thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_151]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:796) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:741) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:590) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+Caused by: java.lang.NullPointerException
+	at orescape.mod.objects.tools.ShortbowNormal.onPlayerStoppedUsing(ShortbowNormal.java:134) ~[ShortbowNormal.class:?]
+	at net.minecraft.item.ItemStack.onPlayerStoppedUsing(ItemStack.java:628) ~[ItemStack.class:?]
+	at net.minecraft.entity.EntityLivingBase.stopActiveHand(EntityLivingBase.java:3089) ~[EntityLivingBase.class:?]
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerDigging(NetHandlerPlayServer.java:692) ~[NetHandlerPlayServer.class:?]
+	at net.minecraft.network.play.client.CPacketPlayerDigging.processPacket(CPacketPlayerDigging.java:56) ~[CPacketPlayerDigging.class:?]
+	at net.minecraft.network.play.client.CPacketPlayerDigging.processPacket(CPacketPlayerDigging.java:12) ~[CPacketPlayerDigging.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 5 more
+[19:07:25] [Server thread/INFO]: Saving and pausing game...
+[19:07:25] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[19:07:25] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[19:07:25] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[19:07:32] [main/INFO]: Stopping!
+[19:07:33] [Server thread/INFO]: Stopping server
+[19:07:33] [Server thread/INFO]: Saving players
+[19:07:33] [Server thread/INFO]: Saving worlds
+[19:07:33] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[19:07:33] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[19:07:33] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[19:07:33] [main/INFO]: SoundSystem shutting down...
+[19:07:33] [main/WARN]: Author: Paul Lamb, www.paulscode.com
